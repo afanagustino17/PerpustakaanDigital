@@ -9,7 +9,7 @@
         deskripsi: "Buku yang menjelaskan bagaimana teknologi blockchain akan sangat penting di tahun-tahun yang akan mendatang",
         halaman: 147,
         tahun: 2016,
-        sampul: "/image/block.jpg",
+        sampul: "image/block.jpg",
         tautanBaca: "https://cdn.bookey.app/files/pdf/book/en/blockchain-revolution-by-don-tapscott.pdf" // Link untuk membaca buku
         
     },
@@ -23,7 +23,7 @@
         deskripsi: "Buku yang menjelaskan tentang psikologi dalam pengelolaan uang dan investasi.",
         halaman: 256,
         tahun: 2020,
-        sampul: "/image/cover.jpg",
+        sampul: "image/cover.jpg",
         tautanBaca: "https://en.z-library.sk/book/29358009/64db39/the-psychology-of-money.html?dsource=mostpopular" // Link untuk membaca buku
         
     },
@@ -36,7 +36,7 @@
         deskripsi: " membantu mahasiswa dalam mempelajari, memahami serta dapat menyelesaikan masalah yang berhubungan Akuntansi Keuangan Dasar berbasis SAK ETAP.",
         halaman: 167,
         tahun: 2016,
-        sampul: "/image/akutansi.png",
+        sampul: "image/akutansi.png",
         tautanBaca: "https://repository.bsi.ac.id/repo/files/353319/download/Buku-Ajar-0/?pAkuntansi-Keuangan-Dasar.pdf" // Link untuk membaca buku
     },
         {
@@ -48,7 +48,7 @@
         deskripsi: "Sebagai dokumen hidup, buku ini tentu dapat diperbaiki dan disesuaikan dengan kebutuhan dan perkembangan keilmuan dan teknologi.",
         halaman: 256,
         tahun: 2023,
-        sampul: "/image/infor.jpg",
+        sampul: "image/infor.jpg",
         tautanBaca: "https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Smk-Informatika-BG-KLS-X.pdf" // Link untuk membaca buku
     },
     {
@@ -72,7 +72,7 @@
         deskripsi: " saya membagikan rencana selangkah demi selangkah untuk membangun kebiasaan yang lebih baik-bukan untuk beberapa hari atau minggu, tapi seumur hidup. ",
         halaman: 356,
         tahun: 2018,
-        sampul: "/image/wk.jpg",
+        sampul: "image/wk.jpg",
         tautanBaca: "file:///C:/Users/N3N0C/Downloads/Atomic%20Habits%20-Bahasa%20Indonesia-%20-%20eBookWave%20(1).pdf" // Link untuk membaca buku
     },
     {
@@ -84,7 +84,7 @@
         deskripsi: "Melalui pembelajaran PPKn, siswa dipersiapkan untuk dapat berperan sebagai warga negara yang efektif dan bertanggung jawab.",
         halaman: 152,
         tahun: 2018,
-        sampul: "/image/PPKN (1).jpg",
+        sampul: "image/PPKN (1).jpg",
         tautanBaca: "https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/k13/bukusiswa/Kelas%20XII%20PPKN%20BS%20press.pdf" // Link untuk membaca buku
     },
     {
@@ -96,7 +96,7 @@
         deskripsi: "kita harapkan dapat menumbuhkembangkan kesadaran terhadap peran sosial seni di masyarakat",
         halaman: 240,
         tahun: 2017,
-        sampul: "/image/1.jpg",
+        sampul: "image/1.jpg",
         tautanBaca: "https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/k13/bukusiswa/Kelas%20X%20Seni%20Budaya%20BS%20Sem%201%20press.pdf" // Link untuk membaca buku
     },
     {
@@ -108,7 +108,7 @@
         deskripsi: "Semua materi di atas ditulis dan disusun secara sederhana namun sistematis sesuai dengan tingkat kebutuhan dan kompetensi peserta didik pada jenjang SMA kelas X.",
         halaman: 202,
         tahun: 2017,
-        sampul: "/image/3.png",
+        sampul: "image/3.png",
         tautanBaca: "https://buku.kemendikdasmen.go.id/katalog/Pendidikan-Agama-Islam-Dan-Budi-Pekerti-Kelas-X" // Link untuk membaca buku
     },
      {
@@ -120,7 +120,7 @@
         deskripsi: "Hal ini mengkritik pandangan ekonomi klasik yang meyakini bahwa pasar bebas akan selalu kembali ke kondisi keseimbangan dengan sendirinya, yaitu lapangan kerja penuh (full employment), tanpa perlu intervensi pemerintah (laissez-faire).",
         halaman: 680,
         tahun: 1999,
-        sampul: "/image/5.png",
+        sampul: "image/5.png",
         tautanBaca: "https://archive.org/details/encyclopediaofke0000unse/page/n15/mode/2up" // Link untuk membaca buku
     },
     {
@@ -132,7 +132,7 @@
         deskripsi: "Kurikulum ini memberikan keleluasaan bagi satuan/program pendidikan dalam mengimplementasikan kurikulum dengan prinsip diversiikasi sesuai dengan kondisi satuan pendidikan, potensi daerah, dan peserta didik.",
         halaman: 288,
         tahun: 2022,
-        sampul: "/image/6.jpg",
+        sampul: "image/6.jpg",
         tautanBaca: "https://drive.google.com/file/d/1dtfPIndJqYui18dnXx9Z_WgswWM1P5IX/view" // Link untuk membaca buku
     },
     {
@@ -144,7 +144,7 @@
         deskripsi: "Buku ini diharapkan dapat membantu pembaca memahami teori Teknologi Jaringan Nirkabel, sehingga mereka dapat mengaplikasikan ilmunya",
         halaman: 151,
         tahun: 2022,
-        sampul: "/image/0.jpg",
+        sampul: "image/0.jpg",
         tautanBaca: "https://repository.bsi.ac.id/repo/files/353460/download/Buku---Teknologi-Jaringan-Nirkabel.pdf" // Link untuk membaca buku
     },
     {
@@ -156,7 +156,7 @@
         deskripsi: "Buku ekonomi untuk kelas 12 dengan fokus pada makroekonomi dan ekonomi internasional.",
         halaman: 403,
         tahun: 2019,
-        sampul: "/image/12.jpg",
+        sampul: "image/12.jpg",
         tautanBaca: "https://books.google.co.id/books?id=oBc5EAAAQBAJ&pg=PA5&source=gbs_toc_r&cad=1#v=onepage&q&f=false" // Link untuk membaca buku
     },
    
