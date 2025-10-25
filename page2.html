@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital Sekolah</title>
+    <link rel="icon" href="01.jpg" type="image/jpg">
+     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="kontainer">
+            <div class="konten-header">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    <h1>SMK Negeri Rengel</h1>
+                </div>
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#books">Koleksi Buku</a></li>
+                        <li><a href="#categories">Kategori</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian Hero -->
+    <section class="hero" id="home">
+        <div class="kontainer">
+            <div class="konten-hero">
+                <h2>Selamat Datang di Perpustakaan Digital <br> <span class="kontainer-type">SMK NEGERI RENGEL</span> </h2>
+                <p>Temukan dan baca ribuan buku pelajaran dan referensi untuk mendukung proses belajar mengajar Anda</p>
+                <a href="#books" class="tombol-hero">Jelajahi Koleksi <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pencarian -->
+    <section class="bagian-pencarian">
+        <div class="kontainer">
+            <div class="kontainer-pencarian">
+                <div class="kotak-pencarian">
+                    <input type="text" id="input-pencarian" placeholder="Cari buku berdasarkan judul, penulis, atau mata pelajaran...">
+                    <button id="tombol-pencarian"><i class="fas fa-search"></i> Cari</button>
+                </div>
+                <div class="opsi-filter">
+                    <select id="filter-kategori">
+                        <option value="">Semua Kategori</option>
+                        <option value="Matematika">Matematika</option>
+                        <option value="Bahasa">Bahasa</option>
+                        <option value="Sains">Sains</option>
+                        <option value="Sejarah">Sejarah</option>
+                        <option value="Teknologi">Teknologi</option>
+                        <option value="Seni">Seni & Budaya</option>
+                        <option value="Pengambangan Diri">Pengambangan Diri</option>
+                        <option value="Agama">Agama</option>
+                    </select>
+                    <select id="filter-kelas">
+                        <option value="">Semua Kelas</option>
+                        <option value="X">Kelas X</option>
+                        <option value="XI">Kelas XI</option>
+                        <option value="XII">Kelas XII</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Buku -->
+    <section class="bagian-buku" id="books">
+        <div class="kontainer">
+            <h2 class="judul-bagian">Buku Populer</h2>
+            <div class="grid-buku" id="grid-buku">
+                <!-- Buku akan dimuat di sini oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kategori -->
+    <section class="bagian-kategori" id="categories">
+        <div class="kontainer">
+            <h2 class="judul-bagian">Kategori Buku</h2>
+            <div class="grid-kategori">
+                <div class="kartu-kategori" data-kategori="Matematika">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Matematika</h3>
+                    <p>2 buku</p>
+                </div>
+                <div class="kartu-kategori" data-kategori="Bahasa">
+                    <i class="fas fa-language"></i>
+                    <h3>Bahasa</h3>
+                    <p>1 buku</p>
+                </div>
+                <div class="kartu-kategori" data-kategori="Sejarah">
+                    <i class="fas fa-monument"></i>
+                    <h3>Sejarah</h3>
+                    <p>3 buku</p>
+                </div>
+                <div class="kartu-kategori" data-kategori="Teknologi">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Teknologi</h3>
+                    <p>3 buku</p>
+                </div>
+                <div class="kartu-kategori" data-kategori="Seni">
+                    <i class="fas fa-palette"></i>
+                    <h3>Seni & Budaya</h3>
+                    <p>1 buku</p>
+                </div>
+                <div class="kartu-kategori" data-kategori="Pengambangan Diri">
+                    <i class="fas fa-users"></i>
+                    <h3>Pengambangan Diri</h3>
+                    <p>2 buku</p>
+                </div>
+                <div class="kartu-kategori" data-kategori="Agama">
+                    <i class="fas fa-pray"></i>
+                    <h3>Agama</h3>
+                    <p>1 buku</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- kakinya-->
+    <footer id="contact">
+        <div class="kontainer">
+            <div class="konten-footer">
+                <div class="bagian-footer">
+                    <h3>Tentang Kami</h3>
+                    <p>Perpustakaan Digital Sekolah SMK Ngeri Rengel adalah platform untuk membantu siswa dan guru mengakses buku pelajaran dan referensi dengan mudah.</p>
+                </div>
+                <div class="bagian-footer">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Kalisat, No. 01 Punggulrejo, Rengel - Tuban</p>
+                    <p><i class="fas fa-phone"></i> 03568810234</p>
+                    <p><i class="fas fa-envelope"></i> smkn.rengel@gmail.com</p>
+                </div>
+                <div class="bagian-footer">
+                    <h3>Tautan Cepat</h3>
+                    <a href="#home">Beranda</a>
+                    <a href="#books">Koleksi Buku</a>
+                    <a href="#categories">Kategori</a>
+                    <a href="#about">Tentang</a>
+                </div>
+            </div>
+            <div class="hak-cipta">
+                <p>&copy; 2023 Perpustakaan Digital Sekolah. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    <!--  Detail Buku -->
+    <div class="modal" id="modal-buku">
+        <div class="konten-modal">
+            <span class="tutup-modal">&times;</span>
+            <div class="detail-buku" id="detail-buku">
+                <!-- Detail buku akan dimuat di sini -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol Gulir ke Atas -->
+    <div class="gulir-ke-atas" id="gulir-ke-atas">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
