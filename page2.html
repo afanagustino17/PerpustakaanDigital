@@ -4,172 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Digital Sekolah</title>
-    <link rel="icon" href="image/01.png" type="image/png">
-     <link rel="stylesheet" href="style2.css">
+      <link rel="icon" href="image/lib.png" type="image/jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.3.css">
 </head>
 <body>
+    <!-- Background Animation -->
+    <div class="bg-animation" id="bg-animation"></div>
+
     <!-- Header -->
     <header id="header">
-        <div class="kontainer">
-            <div class="konten-header">
-                <div class="logo">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
                     <i class="fas fa-book"></i>
-                    <h1>SMK Negeri Rengel</h1>
                 </div>
-                <div class="menu-mobile">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Beranda</a></li>
-                        <li><a href="#books">Koleksi Buku</a></li>
-                        <li><a href="#categories">Kategori</a></li>
-                        <li><a href="#about">Tentang</a></li>
-                        <li><a href="#contact">Kontak</a></li>
-                    </ul>
-                </nav>
+                <div class="logo-text">DigitalLibrary</div>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#books">Koleksi</a></li>
+                    <li><a href="#categories">Kategori</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Bagian Hero -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="kontainer">
-            <div class="konten-hero">
-                <h2>Selamat Datang di Perpustakaan Digital <br> <span class="kontainer-type">SMK NEGERI RENGEL</span> </h2>
-                <p>Temukan dan baca ribuan buku pelajaran dan referensi untuk mendukung proses belajar mengajar Anda</p>
-                <a href="#books" class="tombol-hero">Jelajahi Koleksi <i class="fas fa-arrow-right"></i></a>
+        <h1>
+            <div class="typing-container">
+                <span class="typing-text" id="typing-text"></span>
+            </div>
+        </h1>
+        <p>Temukan dan baca ribuan buku pelajaran referensi untuk mendukung proses belajar mengajar Anda</p>
+        <a href="#books" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> Jelajahi Koleksi
+        </a>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Cari buku berdasarkan judul, penulis, atau mata pelajaran...">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i> Cari
+                </button>
+            </div>
+            <div class="filter-options">
+                <select id="category-filter">
+                    <option value="">Semua Kategori</option>
+                    <option value="Matematika">Matematika</option>
+                    <option value="Sejarah">Sejarah</option>
+                    <option value="Bahasa">Bahasa</option>
+                    <option value="Teknologi">Teknologi</option>
+                    <option value="Pengembangan Diri">Pengembangan Diri</option>
+                    <option value="Agama">Agama</option>
+                </select>
+                <select id="class-filter">
+                    <option value="">Semua Kelas</option>
+                    <option value="10">Kelas 10</option>
+                    <option value="11">Kelas 11</option>
+                    <option value="12">Kelas 12</option>
+                </select>
             </div>
         </div>
     </section>
 
-    <!-- Bagian Pencarian -->
-    <section class="bagian-pencarian">
-        <div class="kontainer">
-            <div class="kontainer-pencarian">
-                <div class="kotak-pencarian">
-                    <input type="text" id="input-pencarian" placeholder="Cari buku berdasarkan judul, penulis, atau mata pelajaran...">
-                    <button id="tombol-pencarian"><i class="fas fa-search"></i> Cari</button>
-                </div>
-                <div class="opsi-filter">
-                    <select id="filter-kategori">
-                        <option value="">Semua Kategori</option>
-                        <option value="Matematika">Matematika</option>
-                        <option value="Bahasa">Bahasa</option>
-                        <option value="Sains">Sains</option>
-                        <option value="Sejarah">Sejarah</option>
-                        <option value="Teknologi">Teknologi</option>
-                        <option value="Seni">Seni & Budaya</option>
-                        <option value="Pengambangan Diri">Pengambangan Diri</option>
-                        <option value="Agama">Agama</option>
-                    </select>
-                    <select id="filter-kelas">
-                        <option value="">Semua Kelas</option>
-                        <option value="10">Kelas 10</option>
-                        <option value="11">Kelas 11</option>
-                        <option value="12">Kelas 12</option>
-                    </select>
-                </div>
+    <!-- Books Section -->
+    <section class="books-section" id="books">
+        <div class="section-header">
+            <h2 class="section-title">Koleksi Buku Terbaru</h2>
+        </div>
+        <div class="books-grid" id="books-grid">
+            <!-- Books will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <section class="stats-section">
+    <div class="section-header">
+        <h2 class="section-title">Statistik Perpustakaan</h2>
+    </div>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number" id="total-books">12</div>
+            <div class="stat-label">Total Buku</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="total-categories">6</div>
+            <div class="stat-label">Kategori</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" id="popular-category">Teknologi</div>
+            <div class="stat-label">Kategori Terpopuler</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+        <h2 class="section-title">Kategori Buku</h2>
+        <div class="categories-grid">
+            <div class="category-card" data-category="Matematika">
+                <i class="fas fa-calculator"></i>
+                <h3>Matematika</h3>
+                <p>2 buku</p>
+            </div>
+            <div class="category-card" data-category="Sejarah">
+                <i class="fas fa-monument"></i>
+                <h3>Sejarah</h3>
+                <p>3 buku</p>
+            </div>
+            <div class="category-card" data-category="Bahasa">
+                <i class="fas fa-language"></i>
+                <h3>Bahasa</h3>
+                <p>1 buku</p>
+            </div>
+            <div class="category-card" data-category="Teknologi">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Teknologi</h3>
+                <p>3 buku</p>
+            </div>
+            <div class="category-card" data-category="Seni">
+                <i class="fas fa-palette"></i>
+                <h3>Seni</h3>
+                <p>1 buku</p>
+            </div>
+            <div class="category-card" data-category="Pengembangan Diri">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Pengembangan Diri</h3>
+                <p>2 buku</p>
+            </div>
+            <div class="category-card" data-category="Agama">
+            <i class="fas fa-pray"></i>
+            <h3>Agama</h3>
+            <p>1 buku</p>
             </div>
         </div>
     </section>
 
-    <!-- Bagian Buku -->
-    <section class="bagian-buku" id="books">
-        <div class="kontainer">
-            <h2 class="judul-bagian">Buku Populer</h2>
-            <div class="grid-buku" id="grid-buku">
-                <!-- Buku akan dimuat di sini oleh JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Bagian Kategori -->
-    <section class="bagian-kategori" id="categories">
-        <div class="kontainer">
-            <h2 class="judul-bagian">Kategori Buku</h2>
-            <div class="grid-kategori">
-                <div class="kartu-kategori" data-kategori="Matematika">
-                    <i class="fas fa-calculator"></i>
-                    <h3>Matematika</h3>
-                    <p>2 buku</p>
-                </div>
-                <div class="kartu-kategori" data-kategori="Bahasa">
-                    <i class="fas fa-language"></i>
-                    <h3>Bahasa</h3>
-                    <p>1 buku</p>
-                </div>
-                <div class="kartu-kategori" data-kategori="Sejarah">
-                    <i class="fas fa-monument"></i>
-                    <h3>Sejarah</h3>
-                    <p>3 buku</p>
-                </div>
-                <div class="kartu-kategori" data-kategori="Teknologi">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Teknologi</h3>
-                    <p>3 buku</p>
-                </div>
-                <div class="kartu-kategori" data-kategori="Seni">
-                    <i class="fas fa-palette"></i>
-                    <h3>Seni & Budaya</h3>
-                    <p>1 buku</p>
-                </div>
-                <div class="kartu-kategori" data-kategori="Pengambangan Diri">
-                    <i class="fas fa-users"></i>
-                    <h3>Pengambangan Diri</h3>
-                    <p>2 buku</p>
-                </div>
-                <div class="kartu-kategori" data-kategori="Agama">
-                    <i class="fas fa-pray"></i>
-                    <h3>Agama</h3>
-                    <p>1 buku</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- kakinya-->
+    <!-- Footer -->
     <footer id="contact">
-        <div class="kontainer">
-            <div class="konten-footer">
-                <div class="bagian-footer">
-                    <h3>Tentang Kami</h3>
-                    <p>Perpustakaan Digital Sekolah SMK Ngeri Rengel adalah platform untuk membantu siswa dan guru mengakses buku pelajaran dan referensi dengan mudah.</p>
-                </div>
-                <div class="bagian-footer">
-                    <h3>Kontak</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Jl. Kalisat, No. 01 Punggulrejo, Rengel - Tuban</p>
-                    <p><i class="fas fa-phone"></i> 03568810234</p>
-                    <p><i class="fas fa-envelope"></i> smkn.rengel@gmail.com</p>
-                </div>
-                <div class="bagian-footer">
-                    <h3>Tautan Cepat</h3>
-                    <a href="#home">Beranda</a>
-                    <a href="#books">Koleksi Buku</a>
-                    <a href="#categories">Kategori</a>
-                    <a href="#about">Tentang</a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Kami  adalah platform perpustakaan digital yang memberikan pengalaman belajar yang lebih baik, cepat dan efisien.</p>
+                <div class="social-links">
+                   
+                    <a href="https://www.instagram.com/smknrengel2005/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtube.com/@smknegerirengel"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="hak-cipta">
-                <p>&copy; 2023 Perpustakaan Digital Sekolah. Semua hak cipta dilindungi.</p>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Kalisat, No. 01 Punggulrejo, Rengel - Tuban</p>
+                <p><i class="fas fa-phone"></i> 03568810234</p>
+                <p><i class="fas fa-envelope"></i>smkn.rengel@gmail.com</p>
             </div>
+            <div class="footer-section">
+                <h3>Link Cepat</h3>
+                <a href="#home">Beranda</a>
+                <a href="#books">Koleksi Buku</a>
+                <a href="#categories">Kategori</a>
+                <a href="#about">Tentang</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2020 - 2025 SMK Negeri Rengel All rights reserved.</p>
         </div>
     </footer>
-    <!--  Detail Buku -->
-    <div class="modal" id="modal-buku">
-        <div class="konten-modal">
-            <span class="tutup-modal">&times;</span>
-            <div class="detail-buku" id="detail-buku">
-                <!-- Detail buku akan dimuat di sini -->
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Modal untuk Detail Buku -->
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-cover">
+                    <img id="modal-cover" src="" alt="Book Cover">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <div class="modal-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span id="modal-author"></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Kelas <span id="modal-class"></span></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Tahun <span id="modal-year"></span></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-file"></i>
+                            <span><span id="modal-pages"></span> halaman</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-tag"></i>
+                            <span id="modal-category"></span>
+                        </div>
+                    </div>
+                    <div class="modal-description">
+                        <h3>Deskripsi Buku</h3>
+                        <p id="modal-description"></p>
+                    </div>
+                    <a id="modal-read-link" href="#" target="_blank" class="btn btn-primary modal-read-btn">
+                        <i class="fas fa-book-open"></i> Baca Sekarang
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Tombol Gulir ke Atas -->
-    <div class="gulir-ke-atas" id="gulir-ke-atas">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-    <script src="script2.js"></script>
+    <script src="style2.3.js"></script>
 </body>
 </html>
